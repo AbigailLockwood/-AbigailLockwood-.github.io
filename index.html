@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs//font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fa-deviantart{
+	width: 50px;
+	text-align: center;
+	font-size: 30px;
+	background: #ffffff;
+	color: black;
+}
+.fa-instagram{
+	width: 50px;
+	text-align: center;
+	font-size: 30px;
+	background: #ffffff;
+	color: black;
+}
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center"><b>Abigail<br>Lockwood</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a> 
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">Abigail Lockwood</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Photo grid -->
+  <!-- Page 1 -->
+  <div class="w3-row mySlides">
+    <div class="w3-third">
+      <img src="Little Traveler.jpg" style="width:100%" onclick="onClick(this)" alt="A little creature on a grand adventure">
+      <img src="Winter in the Divide2.jpg" style="width:100%" onclick="onClick(this)" alt="A curly-antlered creature watching the snow fall in the divide">
+      <img src="Cookie Cuddles.jpg" style="width:100%" onclick="onClick(this)" alt="Cookies. Candy. Sweetness. And a Kitten.">
+    </div>
+
+    <div class="w3-third">
+      <img src="Deep in the Night 2.jpg" style="width:100%" onclick="onClick(this)" alt="Deep in the woods, a mouse braves the night">
+      <img src="Let Sleeping Beasts Lie.jpg" style="width:100%" onclick="onClick(this)" alt="What lies beneath the ice may be best left undisturbed">
+	  <img src="chibi_dragon.jpg" style="width:100%" onclick="onClick(this)" alt="He just wants some loves">
+    </div>
+    
+    <div class="w3-third">
+      <img src="Look to the Horizon.jpg" style="width:100%" onclick="onClick(this)" alt="Contemplation under the pink blossoms and a dusky sky">
+      <img src="Moonlight.jpg" style="width:100%" onclick="onClick(this)" alt="She flies under the moonlit sky">
+      <img src="Look to the Stars.jpg" style="width:100%" onclick="onClick(this)" alt="Let the stars guide your way home">
+    </div>
+  </div>
+  <!-- Page 2 -->
+  <div class="w3-row mySlides">
+	<div class="w3-third">
+	  <img src="Woman on the Hill.jpg" style="width:100%" onclick="onClick(this)" alt="An exploration of the Japanese Ukiyoe style"> 
+	  <img src="Sketch - Kitten in autumn.PNG" style="width:100%" onclick="onClick(this)" alt="A sketch of a kitten in autumn"> 
+	  <img src="Across the Falls3.jpg" style="width:100%" onclick="onClick(this)" alt="An adventurous girl and a curious beast travel across the falls"> 
+	</div>
+	
+	<div class="w3-third">
+	  <img src="A Small Quest.jpg" style="width:100%" onclick="onClick(this)" alt="A small quest, but a brave heart nonetheless"> 
+	  <img src="I'm Sowy.jpg" style="width:100%" onclick="onClick(this)" alt="They really are sorry">
+	  <img src="Flower Girl 2.jpg" style="width:100%" onclick="onClick(this)" alt="Flowers in her hair and the sun on her face"> 
+	  <img src="Kit2.jpg" style="width:100%" onclick="onClick(this)" alt="A cat-like creature floating in the light"> 
+	</div>
+	
+	<div class="w3-third">
+	  <img src="Elf and the Cathedral2.jpg" style="width:100%" onclick="onClick(this)" alt="An elf stands on the balcony of a cathedral as the sun and snow fall"> 
+	  <img src="Sketch - Bunny in Beret.jpg" style="width:100%" onclick="onClick(this)" alt="A sketch of a bunny in a beret"> 
+	  <img src="Mouse House.jpg" style="width:100%" onclick="onClick(this)" alt="Carrying their scrolls and inks, the little mouse sets off from home"> 
+	</div>
+  </div>
+  <!-- Page 3 -->
+  <div class="w3-row mySlides">
+	<div class="w3-third">
+	  <img src="Illustration_Picture7.PNG" style="width:100%" onclick="onClick(this)" alt="Dakota may have handed Ivy a few too many rugby balls"> 
+	  <img src="Illustration_Picture4.PNG" style="width:100%" onclick="onClick(this)" alt="Ivy apologizes to Coach. All is forgiven.">
+	</div>
+	
+	<div class="w3-third">
+	  <img src="Illustration_Picture1.PNG" style="width:100%" onclick="onClick(this)" alt="Huddle up for the big game"> 
+	  <img src="Illustration_BackCover.PNG" style="width:100%" onclick="onClick(this)" alt="The back cover for The Value of Rugby children's book">
+	  <img src="Illustration_DiscussionQuestions.jpg" style="width:100%" onclick="onClick(this)" alt="Sportsmanship is always important"> 	  
+	</div>
+	
+	<div class="w3-third">
+	  <img src="Illustration_Equipment4.PNG" style="width:100%" onclick="onClick(this)" alt="Every athlete needs their gear"> 
+	  <img src="Illustration_DakotaCover.jpg" style="width:100%" onclick="onClick(this)" alt="Practice makes perfect"> 
+	</div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+     <span class="dot" onclick="currentSlide(1)"></span> 
+	 <span class="dot" onclick="currentSlide(2)"></span> 
+	 <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>About Me</b></h4>
+    <img src="I'm Sowy.jpg" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>Abigail Lockwood</h4>
+      <p>To me, illustration is about bringing someone else's ideas into the world. 
+	  I believe that everyone has a vision in their mind, a story they want to tell, and it's my job to make it reality.
+      </p>
+	  <p>
+	  I've studied digital drawing for over four years, focusing on illustration for the past two. 
+	  My specialty is children's book illustration, although I have dipped my toes into several areas of 2D art and design throughout college. 
+	  School projects that I have worked on include video game concept art, platform game assets, storyboards, animatics, and motion graphics. 
+	  The simplistic beauty of still image illustration, however, holds the most appeal for me. 
+	  </p>
+	  <p>
+	  My past work includes over 35 page illustrations for a children's book entitled "The Value of Rugby," which was completed and published in 2018. 
+	  I enjoyed working on the project so much that I decided I wanted to hone my skills as an illustrator and help other authors bring their vision to life. 
+	  This was all while still attending college and holding a part time job as a waitress, so the illustrator career would have to be put on hold until I at least obtained a degree. 
+	  Nearly 2 years later, my digital drawing skills have improved and I am projected to graduate in June of 2020 with a Bachelor of Science degree in Digital Communication Arts from Oregon State University. 
+	  </p>
+	  <p>
+	  If you have an idea in your head that you need some help brining into reality, send me an email, or you can contact me on instagram.
+	  </p>
+      <p>mail: abigail.lockwood97@gmail.com</p>
+      <!-- 
+	  <p>tel: 5353 35531</p>
+      <hr class="w3-opacity">
+      <h4 class="w3-padding-16">Technical Skills</h4>
+      <p class="w3-wide">Digital Illustration</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:95%">95%</div>
+      </div>
+      <p class="w3-wide">Character Design</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide">Storyboarding</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
+      </div>
+      <p><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom">Download Resume</button></p>
+      <hr class="w3-opacity">
+	  -->
+
+    <!--  <h4 class="w3-padding-16">How much I charge</h4>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+            <li class="w3-padding-16">Single Page Illustration</li>
+            <li class="w3-padding-16">Full Color</li>
+            <li class="w3-padding-16">Online Formating</li>
+            <li class="w3-padding-16">
+              <h2>$ 80</h2>
+              <span class="w3-opacity"></span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-white w3-padding-large">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="w3-half">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-black w3-xlarge w3-padding-32">Pro</li>
+            <li class="w3-padding-16">Multi Page Illustration</li>
+            <li class="w3-padding-16">Full Color</li>
+            <li class="w3-padding-16">Online and Print Formating</li>
+            <li class="w3-padding-16">Digital Rights</li>
+            <li class="w3-padding-16">
+              <h2>$ </h2>
+              <span class="w3-opacity">per illustration</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-white w3-padding-large">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+  <!-- Contact section -->
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h4 class="w3-center"><b>Contact Me</b></h4>
+      <p>Do you want me to illustrate something for you? Fill out the form and fill me in with the details :) I'd love to work with you!</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-section">
+          <label>Name</label>
+          <input class="w3-input w3-border" type="text" name="Name" required>
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input w3-border" type="text" name="Email" required>
+        </div>
+        <div class="w3-section">
+          <label>Message</label>
+          <input class="w3-input w3-border" type="text" name="Message" required>
+        </div>
+        <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">  
+    <div class="w3-row-padding">
+      <div class="w3-third">
+        <h3>DeviantArt</h3>
+      <p><a href ="https://www.deviantart.com/abigaillockwood"><button class="fa fa-deviantart"></button></a></p> 
+      </div>
+    
+      <div class="w3-third">
+        <h3>Instagram</h3>
+		<p><a href ="https://www.instagram.com/al_illustrate_/"><button class="fa fa-instagram"></button></a></p>
+       <!-- <ul class="w3-ul">
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Lorem</span><br>
+            <span>Sed mattis nunc</span>
+          </li>
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Ipsum</span><br>
+            <span>Praes tinci sed</span>
+          </li> 
+        </ul> -->
+      </div>
+
+      <div class="w3-third">
+        <h3>Thanks for</h3>
+		<p>
+		<h3>Visiting</h3>
+		</p>
+        <p>
+		<!--
+          <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">London</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">DIY</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Family</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Shopping</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Games</span>
+        -->
+		</p>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+
+</body>
+</html>
